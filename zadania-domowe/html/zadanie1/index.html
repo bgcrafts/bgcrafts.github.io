@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Formularz zgłoszenia na szkolenie:</p>
+    <form action="https://formspree.io/f/mleokjvr" method="POST">
+        <label for="name">Imię</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="surname">Nazwisko</label>
+        <input type="text" id="surname" name="surname"><br>
+
+        <label for="email">Mail</label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="phone">Telefon</label>
+        <input type="tel" id="phone" name="phone"><br>
+
+        <label for="city">Wybierz miasto</label>
+        <select id="city" name="city">
+            <option value="Kraków">Kraków</option>
+            <option value="Warszawa">Warszawa</option>
+            <option value="Gdańsk">Gdańsk</option>
+        </select><br>
+
+        <label for="sex">Płeć</label>
+        <input type="radio" id="sex" name="choise">Kobieta
+        <input type="radio"  name="choise">Mężczyzna<br>
+
+        <input type="checkbox" name="agreement">Wyrażam zgodę na przetwarzanie danych osobowych.<br>
+
+        <label for="messagebox">Wiadomość</label>
+        <textarea type="textarea" name="message"></textarea>
+
+        <input type="submit" value="Wyślij">
+
+    </form>
+</body>
+
+</html>
