@@ -6,46 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularz zgłoszenia na szkolenie</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <p>Formularz zgłoszenia na szkolenie:</p>
-    <form action="https://formspree.io/f/mleokjvr" method="POST">
-        <label for="name">Imię</label>
-        <input type="text" id="name" name="name"><br>
+    <div class="mainBox">
 
-        <label for="surname">Nazwisko</label>
-        <input type="text" id="surname" name="surname"><br>
+        <p class="formheading">Formularz zgłoszenia na szkolenie:</p>
+        <form class="form" action="https://formspree.io/f/mleokjvr" method="POST">
+            <div class="labels">
+                <label for="name">Imię</label>
+                <input type="text" id="name" name="name"><br>
 
-        <label for="email">Mail</label>
-        <input type="email" id="email" name="email"><br>
+                <label for="surname">Nazwisko</label>
+                <input type="text" id="surname" name="surname"><br>
 
-        <label for="phone">Telefon</label>
-        <input type="tel" id="phone" name="phone"><br>
+                <label for="email">Mail</label>
+                <input type="email" id="email" name="email"><br>
 
-        <label for="city">Wybierz miasto</label>
-        <select id="city" name="city">
-            <option value="Kraków">Kraków</option>
-            <option value="Warszawa">Warszawa</option>
-            <option value="Gdańsk">Gdańsk</option>
-        </select><br>
+                <label for="phone">Telefon</label>
+                <input type="tel" id="phone" name="phone"><br><br>
 
-        <p>Płeć</p>
-        <label for="woman">Kobieta</label>
-        <input type="radio" id="woman" name="choise">
-        <label for="man">Mężczyzna</label>
-        <input type="radio" id="man" name="choise"><br><br>
-        
-        <label for="agree">Wyrażam zgodę na przetwarzanie danych osobowych.</label>
-        <input type="checkbox" id="agree" name="agreement"><br>
-        <br>
+                <label for="city">Wybierz miasto</label>
+                <select id="city" name="city">
+                    <option value="Kraków">Kraków</option>
+                    <option value="Warszawa">Warszawa</option>
+                    <option value="Gdańsk">Gdańsk</option>
+                </select><br>
 
-        <label for="messagebox">Wiadomość</label>
-        <textarea id="messagebox" name="message"></textarea>
+                <div class="inline1">
+                    <p>Płeć:</p>
+                    <div class="inline2">
+                    <label for="woman">Kobieta</label>
+                    <input type="radio" id="woman" name="choise">
+                    <label for="man">Mężczyzna</label>
+                    <input type="radio" id="man" name="choise"><br><br>
+                    </div>
+                   
+                </div>
+                
+                <br>
+                <br>
 
-        <input type="submit" value="Wyślij">
+                <label for="messagebox">Wiadomość</label>
+                <textarea id="messagebox" name="message"></textarea><br><br>
 
-    </form>
+                
+            </div>
+            <div class="inline3">
+            <label class="agree" for="agree">Wyrażam zgodę na przetwarzanie danych osobowych.</label>
+            <input type="checkbox" id="agree" name="agreement"><br><br>
+            </div>
+            <input class="send" type="submit" value="Wyślij">
+
+        </form>
+    </div>
 </body>
 
 </html>
