@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formularz zgłoszenia na szkolenie</title>
 </head>
 
 <body>
@@ -30,14 +30,18 @@
             <option value="Gdańsk">Gdańsk</option>
         </select><br>
 
-        <label for="sex">Płeć</label>
-        <input type="radio" id="sex" name="choise">Kobieta
-        <input type="radio"  name="choise">Mężczyzna<br>
-
-        <input type="checkbox" name="agreement">Wyrażam zgodę na przetwarzanie danych osobowych.<br>
+        <p>Płeć</p>
+        <label for="woman">Kobieta</label>
+        <input type="radio" id="woman" name="choise">
+        <label for="man">Mężczyzna</label>
+        <input type="radio" id="man" name="choise"><br><br>
+        
+        <label for="agree">Wyrażam zgodę na przetwarzanie danych osobowych.</label>
+        <input type="checkbox" id="agree" name="agreement"><br>
+        <br>
 
         <label for="messagebox">Wiadomość</label>
-        <textarea type="textarea" name="message"></textarea>
+        <textarea id="messagebox" name="message"></textarea>
 
         <input type="submit" value="Wyślij">
 
