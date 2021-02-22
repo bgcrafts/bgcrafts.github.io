@@ -1,0 +1,99 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+div.main {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    margin-top: 25%;
+    margin-left: 25%;
+    font-size: 5em;
+}
+
+div.number {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+#ten, #nine, #eight, #seven, #six, #five, #four, #three, #two, #one, #txt {
+    visibility: hidden;
+}
+
+#ten {
+    animation: 1s inOut;
+}
+
+#nine {
+    animation: 1s inOut;
+    animation-delay: 1s;
+}
+
+#eight {
+    animation: 1s inOut;
+    animation-delay: 2s;
+}
+
+#seven {
+    animation: 1s inOut;
+    animation-delay: 3s;
+}
+
+#six {
+    animation: 1s inOut;
+    animation-delay: 4s;
+}
+
+#five {
+    animation: 1s inOut;
+    animation-delay: 5s;
+}
+
+#four {
+    animation: 1s inOut;
+    animation-delay: 6s;
+}
+
+#three {
+    animation: 1s inOut;
+    animation-delay: 7s;
+}
+
+#two {
+    animation: 1s inOut;
+    animation-delay: 8s;
+}
+
+#one {
+    animation: 1s inOut;
+    animation-delay: 9s;
+}
+
+#txt {
+    animation: 1s show;
+    animation-delay: 10s;
+}
+
+@keyframes inOut {
+    0% {
+        visibility: hidden;
+    }
+    99% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes show {
+    0% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
