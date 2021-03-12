@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(127, 143, 143);
+}
+
+.main {
+    border: 3px solid rgb(41, 41, 82);
+    min-height: 300px;
+    padding: 10px;
+    display: flex;
+}
+
+.inner {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(172, 172, 189);
+    cursor:pointer;
+    transition: all 1.2s;
+}
+
+button:hover {
+    background-color: rgb(67, 67, 112);
+    color: white;
+}
+
+#dane-programisty {
+    font-size: 2em;
+    color: rgb(67, 67, 112);
+}
+
+p {
+    text-align: left;
+}
