@@ -1,0 +1,22 @@
+.icon {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+i[class^="fab"] {
+    color: orange;
+    background-color: rgb(240, 235, 235);
+    font-size: 4em;
+    flex-basis:100px;
+    /* border: 1px solid white; */
+    border-radius: 50%;
+    width: 100px;
+    line-height: 100px;
+}
+
+hr {
+    width: 70px;
+}
