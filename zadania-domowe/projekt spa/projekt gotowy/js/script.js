@@ -13,6 +13,7 @@ document.getElementsByClassName('mobile-close')[0].addEventListener('click', fun
 
 const createAppointment = (appointment) => {
     console.log(appointment);
+    const appointmentMessage = document.querySelector('.appointment-message');
 
     fetch('https://akademia108.pl/api/ajax/post-appointment.php', {
         headers: {
@@ -24,7 +25,9 @@ const createAppointment = (appointment) => {
     })
     .then(res => res.json())
     .then(resJSON=>{
-            console.log("resJSON");
+            console.log(resJSON);
+            appointmentMessage.classList.add('send');
+            appointmentMessage.innerText = `Thank You ${resJSON.appointment.name} Your appointment date is confirmed!`;
         });
     
 }
@@ -59,7 +62,8 @@ document.getElementById('appointment-form').addEventListener('submit', function(
     }
 
     if(allFields) {
-        console.log(appointment);
+        
+        createAppointment(appointment);
     } else {
         appointmentMessage.classList.add('error');
         appointmentMessage.innerText = "Fill out all necessary fields";
