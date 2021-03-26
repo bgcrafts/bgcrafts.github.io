@@ -7,6 +7,7 @@
 .infobox {
     @extend %common-infobox;
     .infobox-inner {
+        min-height:610px; 
         border: 1px solid #e2e5ea;
         padding:25px;
         border-radius:2px;

@@ -1,7 +1,7 @@
 .main-header {
     height:700px;
     @include flexbox;
-    @include flex-align(flex-start, center);
+    @include flex-align(space-around, center);
     position: relative;
 
     .header-description {
@@ -15,6 +15,7 @@
     h1 {
         color: #1e2528;
         font-size: 50px;
+        
     }
 
     .main-header-content {
@@ -26,10 +27,11 @@
 
         .reserve {
             display: inline-block;
-            padding: 14px 20px;
+            padding: 24px 20px;
             color: #fff;
             background-color: $primary-color;
             text-decoration: none;
+
 
             &:hover {
                 background-color: $button-color;
@@ -41,7 +43,7 @@
         .watch {
             display: inline-block;
             color: $secondary-text-color;
-            margin-left: 25px;
+            margin-left: 34px;
             text-decoration: none;
 
             i {
